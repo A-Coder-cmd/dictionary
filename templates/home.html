@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+| home
+{% endblock title %}
+{% block content %}
+  <div class="card my-3">
+    <div class="card-body">
+        <center>
+      <h5 class="card-title">Welcome to vocablab</h5>
+      <p class="card-text">Hey! use this web to increase your vocabulary</p>
+    </center>
+    </div>
+  </div>
+
+  <form action="/result" method=GET>
+  <div class="container search">
+    <input type="text" class="form-control" id="name" name='text' aria-describedby="emailHelp" placeholder="Serach your query..."><button type="submit" class="btn btn-primary">Go!</button>
+  </div>
+  </form>
+  
+{% endblock content %}

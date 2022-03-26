@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}| result{% endblock title %}
+{% block content %}
+<div class="card my-3">
+    <h5 class="card-header">Vocablab</h5>
+    <div class="card-body">
+        <h5 class="card-title">info. of {{word}} </h5>
+        <p class="card-text"><strong>Parts Of Speech</strong> {{POS}}</p>
+        <p class="card-text"><strong>Meaning</strong> {{definition}}</p>
+        <p class="card-text"><strong>Example</strong> {{example}}</p>
+        <p class="card-text"><strong>Pronounciation </strong><a href="{{pronounciation}}" class="btn btn-primary">Click here!</a></p>
+        
+    </div>
+
+</div>
+{% endblock content %}
