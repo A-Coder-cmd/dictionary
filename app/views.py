@@ -4,7 +4,7 @@ import requests
 # Create your views here.
 def home(request):
 
-    return render(request,'home.html')
+    return render(request,'index.html')
 
 def result(request):
     djtext = request.GET.get('text','default') # geting the text from form 
